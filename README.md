@@ -1,13 +1,33 @@
-Hi, I’m Tyra Austin — a cybersecurity analyst with a mission to protect systems, empower people, and constantly learn.
+# 🧪 Home Lab – Ethical Hacking & Cloud Security Practice
 
-🔐 I’m pursuing my Master’s in Cybersecurity and Information Assurance at Western Governors University, and I bring hands-on experience in cloud security, ethical hacking, and compliance. With a military background and industry exposure through roles at Intuit and CRIF, I approach every challenge with discipline and curiosity.
+This repository documents my hands-on cybersecurity practice using a self-built home lab. The goal of this lab is to reinforce ethical hacking, network analysis, and cloud security concepts in a safe, isolated environment.
 
-🧪 In my home lab, I explore real-world vulnerabilities using Kali Linux, Nmap, Metasploit, Wireshark, and Burp Suite — because I believe the best defense starts with knowing how attackers think.
+---
 
-📚 My work is shaped by standards like NIST 800-53, HIPAA, and PCI DSS, and I’m currently preparing for the Pentest+ exam while building AWS infrastructure aligned with FedRAMP.
+## 🖥️ Lab Environment
 
-Let’s build a more secure future — together.
+- **Virtualization Platform**: Oracle VirtualBox
+- **Operating Systems**:
+  - Kali Linux (attacker VM)
+  - Metasploitable2 / DVWA (target VMs)
+  - Windows 10 test machine
+- **Network Setup**: Host-only adapter with isolated virtual network
 
-📫 Reach me:  
-- 💌 tyraaustin57@gmail.com  
-- 💼 [linkedin.com/in/tyra-austin](https://linkedin.com/in/tyra-austin)
+---
+
+## 🔧 Tools Practiced
+
+| Tool        | Purpose                                      |
+|-------------|----------------------------------------------|
+| **Nmap**     | Network and port scanning                    |
+| **Burp Suite** | Web application interception and testing    |
+| **Wireshark** | Network traffic capture and protocol analysis |
+| **Metasploit** | Exploit development and testing             |
+
+---
+
+## 🧪 Sample Practice Scenarios
+
+### 🔍 Nmap Scan – Network Discovery
+```bash
+nmap -sS -sV 192.168.56.0/24
